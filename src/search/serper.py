@@ -37,13 +37,6 @@ async def search_serper(
     num_results: int,
     http_client: httpx.AsyncClient | None = None,
 ) -> list[WebSearchResult]:
-    """
-    Query Serper Google Search API.
-
-    Endpoint: POST https://google.serper.dev/search
-    Auth: X-API-KEY header
-    Payload: {"q": "<query>", "num": <n>}
-    """
     if not query.strip() or num_results < 1:
         return []
 
