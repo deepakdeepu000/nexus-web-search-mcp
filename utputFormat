@@ -1,0 +1,11 @@
+HTTP/1.1 400 Bad Request
+date: Sat, 23 May 2026 07:06:50 GMT
+server: uvicorn
+content-type: application/json
+mcp-session-id: 3135c7a30abe4408950ae322fd35b7bb
+content-length: 162
+
+{"jsonrpc":"2.0","id":"server-error","error":{"code":-32700,"message":"Parse error: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"}}
+
+
+uv run --env-file .env mcp-web-search --http   
