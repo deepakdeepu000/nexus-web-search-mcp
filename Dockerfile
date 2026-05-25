@@ -13,7 +13,6 @@ COPY src/ ./src/
 
 RUN pip install --no-cache-dir -e ".[dev]"
 
-# Default: HTTP transport so Docker users can hit it via REST
 EXPOSE 8000
 ENV FASTMCP_HOST=0.0.0.0
 ENV FASTMCP_PORT=8000
